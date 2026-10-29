@@ -27,6 +27,9 @@ public class CellPhone {
     public void dial(String phoneNumberToCall) {
         System.out.println(this.owner + "'s phone is calling " + phoneNumberToCall);
     }
+    public void dial(CellPhone phone) {
+        System.out.println(this.owner + "'s phone is calling " + phone.getPhoneNumber());
+    }
 
     public int getSerialNumber() {
         return serialNumber;
